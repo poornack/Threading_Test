@@ -16,17 +16,14 @@ using System.Windows.Shapes;
 
 namespace Threading_Test
 {
-
+    
     public class thread_test
     {
         
         public void func1()
         {
-
-            for(int i = 0; i < 50; i++)
-            {
-                Console.WriteLine("Thread operation cycle #" + i);
-            }
+            
+            
 
         }
 
@@ -49,15 +46,26 @@ namespace Threading_Test
         {
             thread_test var = new thread_test();
 
-            Thread t = new Thread(new ThreadStart(var.func1));
+            Thread t = new Thread(new ThreadStart(changeText));
 
             t.Start();
 
-            for(int i = 0; i < 50; i++)
+            
+
+            for (int i = 0; i < 50; i++)
             {
                 Console.WriteLine("Main thread cycle #" + i);
             }
             
         }
+
+        private void changeText()
+        {
+
+            textbox1.Text = "Text has been changed";
+
+        }
+
+        
     }
 }

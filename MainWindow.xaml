@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="195,129,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="196,184,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="23" Margin="206,81,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

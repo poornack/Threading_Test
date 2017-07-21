@@ -62,7 +62,7 @@ namespace Threading_Test
         private void changeText()
         {
 
-            textbox1.Text = "Text has been changed";
+            this.Dispatcher.Invoke(() => textbox1.Text = "Text has been changed");
 
         }
 
